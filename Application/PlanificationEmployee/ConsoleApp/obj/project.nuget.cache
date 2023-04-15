@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9laffU14jKXA4TaMbG4gQ2yqqgbTjWwb1N+mOl6nyBKS9GOmCa9AHUwWP01brx16budhvJ6U/t+X1MoHST0kUw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\15142\\Desktop\\projetFinDeSession\\PlanificationEmployes\\Application\\PlanificationEmployee\\ConsoleApp\\ConsoleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\15142\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
