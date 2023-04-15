@@ -66,19 +66,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\15142\\.nuget\\packages\\": {}
+    "C:\\Users\\rimac\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\15142\\Desktop\\projetFinDeSession\\PlanificationEmployes\\Application\\PlanificationEmployee\\ConsoleApp\\ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\rimac\\OneDrive\\Bureau\\PlanificationEmployerGit\\Application\\PlanificationEmployee\\ConsoleApp\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
-      "projectPath": "C:\\Users\\15142\\Desktop\\projetFinDeSession\\PlanificationEmployes\\Application\\PlanificationEmployee\\ConsoleApp\\ConsoleApp.csproj",
-      "packagesPath": "C:\\Users\\15142\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\15142\\Desktop\\projetFinDeSession\\PlanificationEmployes\\Application\\PlanificationEmployee\\ConsoleApp\\obj\\",
+      "projectPath": "C:\\Users\\rimac\\OneDrive\\Bureau\\PlanificationEmployerGit\\Application\\PlanificationEmployee\\ConsoleApp\\ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\rimac\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rimac\\OneDrive\\Bureau\\PlanificationEmployerGit\\Application\\PlanificationEmployee\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\15142\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rimac\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -92,8 +92,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\15142\\Desktop\\projetFinDeSession\\PlanificationEmployes\\Application\\PlanificationEmployee\\PlanificationEmployee\\PlanificationEmployee.csproj": {
-              "projectPath": "C:\\Users\\15142\\Desktop\\projetFinDeSession\\PlanificationEmployes\\Application\\PlanificationEmployee\\PlanificationEmployee\\PlanificationEmployee.csproj"
+            "C:\\Users\\rimac\\OneDrive\\Bureau\\PlanificationEmployerGit\\Application\\PlanificationEmployee\\PlanificationEmployee\\PlanificationEmployee.csproj": {
+              "projectPath": "C:\\Users\\rimac\\OneDrive\\Bureau\\PlanificationEmployerGit\\Application\\PlanificationEmployee\\PlanificationEmployee\\PlanificationEmployee.csproj"
             }
           }
         }
@@ -128,7 +128,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.414\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
       }
     }
   }
