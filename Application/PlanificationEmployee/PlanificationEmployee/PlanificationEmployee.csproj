@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Employes.cs" />
+    <Compile Include="JourDeTravail.cs" />
+    <Compile Include="Projet.cs" />
+    <Compile Include="SemaineDeTravail.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
