@@ -15,9 +15,10 @@ namespace PlanificationEmployee {
         public List<Tuple<int, int>> jour5 = new List<Tuple<int, int>>();
         public List<Tuple<int, int>> weekend1 = new List<Tuple<int, int>>();
         public List<Tuple<int, int>> weekend2 = new List<Tuple<int, int>>();
+        public List<Tuple<int, int>>[] joursOuvrable = {jour1, jour2, jour3, jour4, jour5, weekend1, weekend2 };
+        public List<Tuple<int, int>>[] weekend = {weekend1, weekend2};
         public feuilleDeTemps(JObject jsonObjet) {
             numeroEmploye = (int)jsonObjet["numeroEmploye"];
-      
             foreach (JToken token in jsonObjet["jour1"])               
                 jour1.Add(new Tuple<int, int>((int)token["projet"], (int)token["minutes"]));                
        
