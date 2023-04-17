@@ -9,9 +9,17 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             mappeurJson mappeur = new mappeurJson();
-            JObject jsonObjet = mappeur.getDataFromJsonFile("C:\\Users\\15142\\Downloads\\json_1\\FeuilleTempsExemple.json");
+            Console.WriteLine("Entrez le chemin complet du fichier JSON :");
+            string cheminOriginFichier = Console.ReadLine();
+            string cheminModifieFichier = cheminOriginFichier.Replace("\\", "\\\\");
+            string cheminModifieFichier2 = cheminModifieFichier.Replace("\"", "");
+
+            JObject jsonObjet = mappeur.getDataFromJsonFile(cheminModifieFichier2);
+
+            Console.WriteLine(jsonObjet);
             feuilleDeTemps feuilleDeTemps = new feuilleDeTemps(jsonObjet);
-            Console.WriteLine("Hello, world!");
+            string json = File.ReadAllText(cheminModifieFichier2);
+
         }
     }
 }
