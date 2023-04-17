@@ -18,7 +18,7 @@ namespace ConsoleApp
 
             Console.WriteLine(jsonObjet);
             feuilleDeTemps feuilleDeTemps = new feuilleDeTemps(jsonObjet);
-            string json = File.ReadAllText(cheminModifieFichier2);
+            
 
         }
     }
