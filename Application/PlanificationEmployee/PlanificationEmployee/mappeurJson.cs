@@ -16,6 +16,10 @@ public class mappeurJson
         string jsonString = File.ReadAllText(inputFilePath);
         JObject jsonObjet = JsonConvert.DeserializeObject<JObject>(jsonString);
         return jsonObjet;
+        
+        }
+  public JObject getOutPutJson(Dictionary<string, string> data) {        
+            return JObject.FromObject(data);
         }
     }
 }
