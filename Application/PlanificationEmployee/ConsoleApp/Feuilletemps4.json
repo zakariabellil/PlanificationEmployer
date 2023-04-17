@@ -1,0 +1,66 @@
+{
+    "numeroEmploye": 800,
+    "jour1": [
+      {
+        "projet": 200,
+        "minutes": 180
+      },
+      {
+        "projet": 125,
+        "minutes":300
+      },
+      {
+        "projet": 990,
+        "minutes": 180
+      }
+    ],
+  
+    "jour2": [
+      {
+        "projet": 125,
+        "minutes": 420
+      }
+    ],
+    "jour3": [
+      {
+        "projet": 125,
+        "minutes": 100
+      },
+      {
+        "projet": 990,
+        "minutes": 420
+      },
+      {
+        "projet": 200,
+        "minutes": 300
+        }
+    ],
+    "jour4": [
+      {
+        "projet": 125,
+        "minutes": 420
+      }
+    ],
+    "jour5": [
+        {
+        "projet": 125,
+        "minutes": 90
+        },
+        {
+          "projet": 200,
+          "minutes": 400
+          }
+    ],
+    "weekend1": [
+        {
+            "projet": 990,
+            "minutes": 480
+          }
+    ],
+    "weekend2": [
+      {
+        "projet": 990,
+        "minutes": 420
+      }
+    ]
+  }
