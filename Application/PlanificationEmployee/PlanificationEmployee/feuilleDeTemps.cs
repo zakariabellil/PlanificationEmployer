@@ -42,5 +42,38 @@ namespace PlanificationEmployee {
 
 
         }
+         public override string ToString()
+        {
+            string s = $"Feuille de temps de l'employé n°{numeroEmploye} :\n";
+            s += "Jour 1 :\n";
+            s += AfficherListe(jour1);
+            s += "Jour 2 :\n";
+            s += AfficherListe(jour2);
+            s += "Jour 3 :\n";
+            s += AfficherListe(jour3);
+            s += "Jour 4 :\n";
+            s += AfficherListe(jour4);
+            s += "Jour 5 :\n";
+            s += AfficherListe(jour5);
+            s += "Week-end 1 :\n";
+            s += AfficherListe(weekend1);
+            s += "Week-end 2 :\n";
+            s += AfficherListe(weekend2);
+            return s;
+        }
+
+        private string AfficherListe(List<Tuple<int, int>> liste)
+        {
+            if (liste.Count == 0)
+            {
+                return "- Aucun projet.\n";
+            }
+            string s = "";
+            foreach (Tuple<int, int> t in liste)
+            {
+                s += $"- Projet {t.Item1} : {t.Item2} minutes.\n";
+            }
+            return s;
+        }
     }
 }
