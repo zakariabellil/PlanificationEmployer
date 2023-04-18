@@ -17,5 +17,5 @@ employeNormal :
 Pour utiliser l'application, il suffit de lancer le programme et de suivre les instructions affichées dans la console. Vous pouvez entrer un fichier JSON contenant une feuille de temps pour un employé, et l'application va valider la feuille de temps en utilisant les règles spécifiées dans le mapeur.json. Les erreurs de validation seront affichées dans la console et dans un fichier JSON de sortie.
 
 pour utiliser l'application :
-Vous devez allez dans le dossier \PlanificationEmployer\Application\PlanificationEmployee\ConsoleApp\bin\Debug\net5.0 et executer planification Employee.exe
+Vous devez allez dans le dossier \PlanificationEmployer\Application\PlanificationEmployee\ConsoleApp\bin\Debug\net5.0 et executer planification ConsoleApp.exe
 Merci d'avoir utilisé cette application !
