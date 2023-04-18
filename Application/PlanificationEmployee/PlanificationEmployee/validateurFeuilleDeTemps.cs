@@ -39,8 +39,8 @@ namespace PlanificationEmployee
                 else
                     resultatValidationData.Add("jour" + compteurDeJournee.ToString(), messageValidation);
 
-                tempsTeleTravail = tempsTeleTravail + tempsJourneeData[TRAVAILBUREAU] + tempsJourneeData[TELETRAVAIL];
-                tempsTotaleTravail = tempsTotaleTravail + tempsJourneeData[TELETRAVAIL];
+                tempsTeleTravail = tempsTeleTravail +  tempsJourneeData[TELETRAVAIL];
+                tempsTotaleTravail = tempsTotaleTravail + tempsJourneeData[TRAVAILBUREAU] + tempsJourneeData[TELETRAVAIL];
                 compteurDeJournee++;
             }
 
@@ -48,8 +48,8 @@ namespace PlanificationEmployee
             foreach (List<Tuple<int, int>> jour in feuilleDeTemps.weekend)
             {
                 Dictionary<string, int> tempsJourneeData = calculerTempsJourneeTravail(jour);
-                tempsTeleTravail = tempsTeleTravail + tempsJourneeData[TRAVAILBUREAU] + tempsJourneeData[TELETRAVAIL];
-                tempsTotaleTravail = tempsTotaleTravail + tempsJourneeData[TELETRAVAIL];
+                tempsTeleTravail = tempsTeleTravail + tempsJourneeData[TELETRAVAIL];
+                tempsTotaleTravail = tempsTotaleTravail + tempsJourneeData[TRAVAILBUREAU] + tempsJourneeData[TELETRAVAIL];
             }
 
             messageValidation = validerTeleTravailTotal();
