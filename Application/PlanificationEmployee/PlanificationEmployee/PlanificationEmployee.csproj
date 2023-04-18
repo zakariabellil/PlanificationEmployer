@@ -68,6 +68,7 @@
     <Compile Include="JourDeTravail.cs" />
     <Compile Include="Projet.cs" />
     <Compile Include="SemaineDeTravail.cs" />
+    <Compile Include="validateurFeuilleDeTemps.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
