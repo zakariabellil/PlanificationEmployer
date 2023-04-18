@@ -1,0 +1,7 @@
+2023/04/10: Reuinion du groupe
+2023/04/11: reunion de groupe
+2023/04/12: reuinion de groupe, discussion par rapport au diagramme de classe 
+2023/04/14: Ajouter Validateur 
+2023/04/15: creation de la classe validateur
+2023/04/16: tester la classe validateur 
+2023/04/17: tester mon code avec l'application 
