@@ -13,13 +13,9 @@ namespace ConsoleApp
             string cheminOriginFichier = Console.ReadLine();
             string cheminModifieFichier = cheminOriginFichier.Replace("\\", "\\\\");
             string cheminModifieFichier2 = cheminModifieFichier.Replace("\"", "");
-
             JObject jsonObjet = mappeur.getDataFromJsonFile(cheminModifieFichier2);
-
-            Console.WriteLine(jsonObjet);
-            feuilleDeTemps feuilleDeTemps = new feuilleDeTemps(jsonObjet);
-            
-
+            feuilleDeTemps feuilleDeTemps = new feuilleDeTemps(jsonObjet); 
+            Console.WriteLine(feuilleDeTemps.ToString());
         }
     }
 }
