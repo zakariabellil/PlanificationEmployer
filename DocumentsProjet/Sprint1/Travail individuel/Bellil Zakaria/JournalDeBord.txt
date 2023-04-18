@@ -1,0 +1,20 @@
+2023-04-04:
+lecture et comprehention du projet 1h
+2023-04-10:
+reunion de planification 1h30
+2023-04-11:
+reunion de planification 1h30
+creation des tache 30 min
+creer le projet 30min
+recherche sur comment faire le mapage des fichier jason 2h
+2023-04-12:
+scrum + reunion de groupe (discuter sur le diagrame de classe et les ajustement) 1h30
+travailler sur la classe feuille de temps 1h
+2023-04-13:
+scrum + reunion de groupe 1h
+travailler sur la classe feuille de temps 2h
+2023-04-14:
+essayer de regler le probleme des fichier binnaire dans git hub avec le gitIgnore et les conflits 3h
+faire un push des classe mappeur + feuille de temps
+2023-04-17:
+tester le code existant et discuter en equipe des probleme 1h30
