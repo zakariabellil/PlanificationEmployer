@@ -1,0 +1,13 @@
+﻿<Window x:Class="PlanificationEmployee.InterfaceEmployes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlanificationEmployee"
+        mc:Ignorable="d"
+        Title="InterfaceEmployes" Height="450" Width="800">
+    <Grid Background="#FFB13EDE">
+        <Label Content="Interface Epmloyés" HorizontalAlignment="Center" Height="60" Margin="0,-1,0,0" VerticalAlignment="Top" Width="800" Background="#FF5AB342" HorizontalContentAlignment="Center" FontSize="30" FontWeight="Bold" FontStyle="Italic" FontFamily="Times New Roman"/>
+
+    </Grid>
+</Window>

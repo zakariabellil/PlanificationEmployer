@@ -11,8 +11,6 @@ namespace ConsoleApp
             mappeurJson mappeur = new mappeurJson();
             Console.WriteLine("Entrez le chemin complet du fichier JSON :");
             string cheminOriginFichier = Console.ReadLine().Replace("\"", "\\");
-            //string cheminModifieFichier = cheminOriginFichier.Replace("\\", "\\\\");
-            //string cheminModifieFichier2 = cheminModifieFichier.Replace("\"", "");
             JObject jsonObjet = mappeur.getDataFromJsonFile(cheminOriginFichier);
             feuilleDeTemps feuilleDeTemps = new feuilleDeTemps(jsonObjet);
             validateurFeuilleDeTemps validateurFeuilleDeTemps = new validateurFeuilleDeTemps();
