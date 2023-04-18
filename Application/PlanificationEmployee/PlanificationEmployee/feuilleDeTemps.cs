@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 namespace PlanificationEmployee {
     public class feuilleDeTemps {
         public int numeroEmploye;
-        public List<Tuple<int, int>> jour1 = new List<Tuple<int, int>>();
-        public List<Tuple<int, int>> jour2 = new List<Tuple<int, int>>();
-        public List<Tuple<int, int>> jour3 = new List<Tuple<int, int>>();
-        public List<Tuple<int, int>> jour4 = new List<Tuple<int, int>>();
-        public List<Tuple<int, int>> jour5 = new List<Tuple<int, int>>();
-        public List<Tuple<int, int>> weekend1 = new List<Tuple<int, int>>();
-        public List<Tuple<int, int>> weekend2 = new List<Tuple<int, int>>();
-        public List<Tuple<int, int>>[] joursOuvrable = {jour1, jour2, jour3, jour4, jour5, weekend1, weekend2 };
+        static private List<Tuple<int, int>> jour1 = new List<Tuple<int, int>>();
+        static private List<Tuple<int, int>> jour2 = new List<Tuple<int, int>>();
+        static private List<Tuple<int, int>> jour3 = new List<Tuple<int, int>>();
+        static private List<Tuple<int, int>> jour4 = new List<Tuple<int, int>>();
+        static private List<Tuple<int, int>> jour5 = new List<Tuple<int, int>>();
+        static private List<Tuple<int, int>> weekend1 = new List<Tuple<int, int>>();
+        static private List<Tuple<int, int>> weekend2 = new List<Tuple<int, int>>();
+        public List<Tuple<int, int>>[] joursOuvrable = {jour1, jour2, jour3, jour4, jour5};
         public List<Tuple<int, int>>[] weekend = {weekend1, weekend2};
         public feuilleDeTemps(JObject jsonObjet) {
             numeroEmploye = (int)jsonObjet["numeroEmploye"];
