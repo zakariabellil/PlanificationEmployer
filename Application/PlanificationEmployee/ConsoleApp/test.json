@@ -3,6 +3,6 @@
 {"jour3":"Aucun probleme"}
 {"jour4":"Aucun probleme"}
 {"jour5":"Aucun probleme"}
-{"MaxTeleTravail":"Aucun probleme"}
+{"MaxTeleTravail":"Vous avez depasser le nombre d'heurs de teletravail pour un employer en administration"}
 {"MaxTotaleTravail":"Aucun probleme"}
-{"MinTotaleTravail":"Vous avez pas travailler assez d'heurs pour un employer en  normal"}
+{"MinTotaleTravail":"Vous avez pas travailler assez d'heurs pour un employer en  administration"}
