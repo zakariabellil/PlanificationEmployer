@@ -66,12 +66,12 @@ namespace PlanificationEmployee {
         {
             if (liste.Count == 0)
             {
-                return "- Aucun projet.\n";
+                return "      - Aucun projet.\n";
             }
             string s = "";
             foreach (Tuple<int, int> t in liste)
             {
-                s += $"- Projet {t.Item1} : {t.Item2} minutes.\n";
+                 s += $"       - Projet {t.Item1} : {t.Item2} minutes.\n";
             }
             return s;
         }
