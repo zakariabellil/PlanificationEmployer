@@ -8,5 +8,6 @@
         Title="InterfacePatron" Height="450" Width="800">
     <Grid Background="#FFB13EDE">
         <Label Content="Interface Patron" HorizontalAlignment="Center" Height="60" Margin="0,-1,0,0" VerticalAlignment="Top" Width="800" Background="#FF5AB342" HorizontalContentAlignment="Center" FontSize="30" FontWeight="Bold" FontStyle="Italic" FontFamily="Times New Roman"/>
+        <Button Content="Retour" HorizontalAlignment="Left" Margin="709,391,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
     </Grid>
 </Window>

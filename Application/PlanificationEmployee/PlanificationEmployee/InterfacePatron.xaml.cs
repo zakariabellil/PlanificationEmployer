@@ -23,5 +23,14 @@ namespace PlanificationEmployee
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+           
+                Menu menu = new Menu();
+                this.Close();
+                menu.Show();
+            
+        }
     }
 }
