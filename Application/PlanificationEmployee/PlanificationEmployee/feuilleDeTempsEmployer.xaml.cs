@@ -15,24 +15,19 @@ using System.Windows.Shapes;
 namespace PlanificationEmployee
 {
     /// <summary>
-    /// Logique d'interaction pour InterfaceEmployes.xaml
+    /// Logique d'interaction pour feuilleDeTempsEmployer.xaml
     /// </summary>
-    public partial class InterfaceEmployes : Window
+    public partial class feuilleDeTempsEmployer : Window
     {
         List<rangeFeuilleDeTempsUI> rangeFeuilleDeTempsUIS = new List<rangeFeuilleDeTempsUI>();
-        public InterfaceEmployes()
+        public feuilleDeTempsEmployer()
         {
             InitializeComponent();
             rangeFeuilleDeTempsUIS.Add(new rangeFeuilleDeTempsUI { CodeProjet = "", Lundi = "", Mardi = "" });
             dataGrid.ItemsSource = rangeFeuilleDeTempsUIS;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Menu menu = new Menu();
-            this.Close();
-            menu.Show();
-        }
+
 
         private void Sauvgarder_Click(object sender, RoutedEventArgs e)
         {

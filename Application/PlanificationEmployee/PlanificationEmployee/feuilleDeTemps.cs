@@ -39,11 +39,9 @@ namespace PlanificationEmployee {
          
             foreach (JToken token in jsonObjet["weekend2"])
                 weekend2.Add(new Tuple<int, int>((int)token["projet"], (int)token["minutes"]));
-
-
-        }
+            }
          public override string ToString()
-        {
+            {
             string s = $"Feuille de temps de l'employé n°{numeroEmploye} :\n";
             s += "Jour 1 :\n";
             s += AfficherListe(jour1);
@@ -60,20 +58,20 @@ namespace PlanificationEmployee {
             s += "Week-end 2 :\n";
             s += AfficherListe(weekend2);
             return s;
-        }
+            }
 
         private string AfficherListe(List<Tuple<int, int>> liste)
-        {
-            if (liste.Count == 0)
             {
+            if (liste.Count == 0)
+                {
                 return "      - Aucun projet.\n";
-            }
+                }
             string s = "";
             foreach (Tuple<int, int> t in liste)
-            {
+                {
                  s += $"       - Projet {t.Item1} : {t.Item2} minutes.\n";
-            }
+                }
             return s;
-        }
+            }
     }
 }
