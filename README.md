@@ -1,4 +1,5 @@
 PlanificationEmployes
+
 Bienvenue dans cette application de validation de feuille de temps des employés !
 
 Cette application permet aux employés de saisir les heures travaillées pour différents projets et différentes tâches. Les heures travaillées sont enregistrées dans une feuille de temps, qui peut être visualisée et modifiée à tout moment.
