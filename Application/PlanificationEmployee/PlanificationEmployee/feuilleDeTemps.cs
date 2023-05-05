@@ -208,8 +208,24 @@ namespace PlanificationEmployee
                                     rangesFeuilleDeTempsDictionary.Add(Projet.Item1, new rangeFeuilleDeTempsUI { CodeProjet = Projet.Item1.ToString(), Vendredi = Projet.Item2.ToString() });
                                 break;
                                 }
-                               
-                            
+                        case 5:
+                            {
+                                if (rangesFeuilleDeTempsDictionary.ContainsKey(Projet.Item1))
+                                    rangesFeuilleDeTempsDictionary[Projet.Item1].Samedi = Projet.Item2.ToString();
+                                else
+                                    rangesFeuilleDeTempsDictionary.Add(Projet.Item1, new rangeFeuilleDeTempsUI { CodeProjet = Projet.Item1.ToString(), Samedi = Projet.Item2.ToString() });
+                                break;
+                            }
+                        case 6:
+                            {
+                                if (rangesFeuilleDeTempsDictionary.ContainsKey(Projet.Item1))
+                                    rangesFeuilleDeTempsDictionary[Projet.Item1].Dimanche = Projet.Item2.ToString();
+                                else
+                                    rangesFeuilleDeTempsDictionary.Add(Projet.Item1, new rangeFeuilleDeTempsUI { CodeProjet = Projet.Item1.ToString(), Dimanche = Projet.Item2.ToString() });
+                                break;
+                            }
+
+
 
                     }
                 
