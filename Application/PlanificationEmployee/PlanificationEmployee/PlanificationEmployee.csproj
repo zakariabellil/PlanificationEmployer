@@ -64,29 +64,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Employes.cs" />
-    <Compile Include="feuilleDeTempsEmployer.xaml.cs">
-      <DependentUpon>feuilleDeTempsEmployer.xaml</DependentUpon>
-    </Compile>
     <Compile Include="InterfaceEmployes.xaml.cs">
       <DependentUpon>InterfaceEmployes.xaml</DependentUpon>
     </Compile>
     <Compile Include="InterfacePatron.xaml.cs">
       <DependentUpon>InterfacePatron.xaml</DependentUpon>
     </Compile>
-    <Compile Include="JourDeTravail.cs" />
     <Compile Include="ListeEmployeeSemaineFeuilleDeTemps.cs" />
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Projet.cs" />
     <Compile Include="rangeFeuilleDeTempsUI.cs" />
-    <Compile Include="SemaineDeTravail.cs" />
     <Compile Include="validateurFeuilleDeTemps.cs" />
-    <Page Include="feuilleDeTempsEmployer.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="InterfaceEmployes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
