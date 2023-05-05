@@ -1,0 +1,31 @@
+﻿<Window x:Class="PlanificationEmployee.InterfacePatron"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlanificationEmployee"
+        mc:Ignorable="d"
+        Title="InterfacePatron" Height="500" Width="800">
+    <Grid Background="#FFB13EDE">
+        <Label Content="Interface Patron" HorizontalAlignment="Center" Height="60" Margin="0,-1,0,0" VerticalAlignment="Top" Width="800" Background="#FF5AB342" HorizontalContentAlignment="Center" FontSize="30" FontWeight="Bold" FontStyle="Italic" FontFamily="Times New Roman"/>
+        <Button Content="Retour" HorizontalAlignment="Left" Margin="709,391,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="chargerUneFeuilleDeTemps" Content="Charger une feuille de temps" HorizontalAlignment="Left" Margin="57,423,0,0" VerticalAlignment="Top" Width="167" Click="chargerUneFeuilleDeTemps_Click"/>
+        <TextBox x:Name="cheminFeuilleDeTempsTxt" HorizontalAlignment="Left" Height="23" Margin="57,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326"/>
+        <Label x:Name="cheminFeuilleDeTemps" Content="Chemin du dossier où les feuilles de temps sont sauvgardées" HorizontalAlignment="Left" Margin="57,344,0,0" VerticalAlignment="Top"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="242" Margin="57,97,0,0" VerticalAlignment="Top" Width="556">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Code projet" Width="75" DisplayMemberBinding="{Binding CodeProjet }" />
+                    <GridViewColumn Header="Lundi" Width="40"  DisplayMemberBinding="{Binding Lundi }"/>
+                    <GridViewColumn Header="Mardi" Width="40"  DisplayMemberBinding="{Binding Mardi }"/>
+                    <GridViewColumn Header="Mercredi" Width="60" DisplayMemberBinding="{Binding Mercredi }"/>
+                    <GridViewColumn Header="Jeudi" Width="40" DisplayMemberBinding="{Binding Jeudi }"/>
+                    <GridViewColumn Header="Vendredi" Width="60" DisplayMemberBinding="{Binding Vendredi }"/>
+                    <GridViewColumn Header="Samedi" Width="60" DisplayMemberBinding="{Binding Samedi }"/>
+                    <GridViewColumn Header="Dimanche" Width="60" DisplayMemberBinding="{Binding Dimanche }"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label x:Name="InfoFeuilleDeTemps" Content="" HorizontalAlignment="Left" Margin="57,64,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

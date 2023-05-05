@@ -23,29 +23,15 @@ namespace PlanificationEmployee
         {
             return JObject.FromObject(data);
         }
-        public void getTxtFromJson(string outputFilePath, string fileName, JObject json)
+
+        public JObject getJsonObject(object data)
         {
-
-
-            using (StreamWriter writer = new StreamWriter(outputFilePath + "\\" + fileName))
-            {
-                using (JsonTextWriter jsonWriter = new JsonTextWriter(writer))
-                {
-                    foreach (KeyValuePair<string, JToken> tokenPair in json)
-                    {
-                        string outPutTxt = tokenPair.Value.Value<string>();
-                        string PropertyNameTxt = tokenPair.Key;
-                        if (outPutTxt != "")
-                        {                           
-                            jsonWriter.WriteStartObject();
-                            jsonWriter.WritePropertyName(PropertyNameTxt);
-                            jsonWriter.WriteValue(outPutTxt);                           
-                            jsonWriter.WriteEndObject();
-                            jsonWriter.WriteWhitespace("\n");
-                        }
-                    }
-                }
-            }
+            return JObject.FromObject(data);
+        }
+        public void SetJsonFileFromJObject(string outputFilePath, string fileName, JObject json)
+        {        
+        string jsonStr = JsonConvert.SerializeObject(json, Formatting.Indented);            
+        File.WriteAllText(outputFilePath + "\\" + fileName + ".json", jsonStr);
         }
     }
 }
