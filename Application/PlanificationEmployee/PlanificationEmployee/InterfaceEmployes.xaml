@@ -41,5 +41,6 @@
         <TextBox x:Name="PathTxt" HorizontalAlignment="Left" Height="23" Margin="51,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="textBox1_TextChanged"/>
         <TextBox x:Name="NomFichierTxt" HorizontalAlignment="Left" Height="23" Margin="48,450,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="NomFichierLbl" Content="Entrer le nom du fichier à sauvgarder" HorizontalAlignment="Left" Margin="48,419,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="retourBtn" Content="Retour" HorizontalAlignment="Left" Margin="420,479,0,0" VerticalAlignment="Top" Width="75" Click="retourBtn_Click"/>
     </Grid>
 </Window>
