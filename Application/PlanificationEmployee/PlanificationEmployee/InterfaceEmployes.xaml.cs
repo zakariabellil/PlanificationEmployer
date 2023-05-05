@@ -19,10 +19,17 @@ namespace PlanificationEmployee
     /// Logique d'interaction pour InterfaceEmployes.xaml
     /// </summary>
     public partial class InterfaceEmployes : Window
+<<<<<<< HEAD
         {
+=======
+    {
+        List<rangeFeuilleDeTempsUI> rangeFeuilleDeTempsUIS = new List<rangeFeuilleDeTempsUI>();
+>>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
         public InterfaceEmployes()
         {
             InitializeComponent();
+            rangeFeuilleDeTempsUIS.Add(new rangeFeuilleDeTempsUI { CodeProjet = "", Lundi = "", Mardi = "" });
+            dataGrid.ItemsSource = rangeFeuilleDeTempsUIS;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -32,5 +39,11 @@ namespace PlanificationEmployee
             menu.Show();
         }
 
+<<<<<<< HEAD
+=======
+        private void Sauvgarder_Click(object sender, RoutedEventArgs e)
+        {
+            List<rangeFeuilleDeTempsUI> test = dataGrid.ItemsSource as List<rangeFeuilleDeTempsUI>;
+>>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
         }
     }

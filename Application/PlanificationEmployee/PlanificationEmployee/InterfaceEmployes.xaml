@@ -5,11 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PlanificationEmployee"
         mc:Ignorable="d"
+<<<<<<< HEAD
         Title="InterfaceEmployes" Height="500" Width="800">
     <Grid Background="#FFB13EDE">
+=======
+        Title="InterfaceEmployes" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left"  Height="227" Margin="129,99,0,0" VerticalAlignment="Top" Width="528" Background="Green" SelectionUnit="CellOrRowHeader" AutoGenerateColumns="False">
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
+                    <Setter Property="Foreground" Value="Black" />
+                    <Setter Property="Background" Value="#edf5ff" />
+                    <Setter Property="BorderThickness" Value="0" />
+                </Style>
+                <Style TargetType="{x:Type DataGridCell}" x:Key="MyTextBlockStyle">
+                    <Setter Property="Foreground" Value="Black" />
+                    <Setter Property="Background" Value="#edf5ff" />
+                    <Setter Property="BorderThickness" Value= "0" />
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Code projet" Width="75" Binding="{Binding CodeProjet }" IsReadOnly="False"/>
+                <DataGridTextColumn Header="Lundi" Width="40" Binding="{Binding Lundi }" IsReadOnly="False"/>
+                <DataGridTextColumn Header="Mardi" Width="40" Binding="{Binding Mardi }" IsReadOnly="False"/>
+                <DataGridTextColumn Header="Mercredi" Width="60" Binding="{Binding Mercredi }" IsReadOnly="False"/>
+                <DataGridTextColumn Header="Jeudi" Width="40" Binding="{Binding Jeudi }" IsReadOnly="False"/>
+                <DataGridTextColumn Header="Vendredi" Width="60" Binding="{Binding Vendredi }" IsReadOnly="False"/>
+                <DataGridTextColumn Header="Samedi" Width="60" Binding="{Binding Samedi }" IsReadOnly="False"/>
+                <DataGridTextColumn Header="Dimanche" Width="60" Binding="{Binding Dimanche }" IsReadOnly="False"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Sauvgarder" Content="Sauvgarder" HorizontalAlignment="Left" Margin="140,352,0,0" VerticalAlignment="Top" Width="75" Click="Sauvgarder_Click"/>
+>>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
         <Label Content="Interface Epmloyés" HorizontalAlignment="Center" Height="60" Margin="0,-1,0,0" VerticalAlignment="Top" Width="800" Background="#FF5AB342" HorizontalContentAlignment="Center" FontSize="30" FontWeight="Bold" FontStyle="Italic" FontFamily="Times New Roman"/>
         <Button Content="Retour" HorizontalAlignment="Left" Margin="705,423,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         
 
     </Grid>
+
+
 </Window>

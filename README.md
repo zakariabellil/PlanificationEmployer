@@ -1,21 +1,26 @@
-# PlanificationEmployes
+PlanificationEmployes
+
 Bienvenue dans cette application de validation de feuille de temps des employés !
 
-Cette application permet de valider une feuille de temps JSON en utilisant des classes C# pour représenter les données et valider leur contenu.
+Cette application permet aux employés de saisir les heures travaillées pour différents projets. Les heures travaillées sont enregistrées dans une feuille de temps, qui peut être visualisée et modifiée à tout moment.
 
-Les classes utilisées sont :
+Les patrons peuvent accéder à une interface spéciale en saisissant un mot de passe. Cette interface leur permet d'afficher des informations de gestion et de valider les heures travaillées des employés.
 
-SemaineDeTravail : représente une semaine de travail pour un employé
-JourDeTravail : représente un jour de travail pour un employé, contenant les projets travaillés et le nombre de minutes travaillées pour chaque projet
-SemaineDeTravailCreateur : permet de créer une nouvelle semaine de travail pour un employé en entrant les informations dans la console
-mapeur.json : 
-Employe : représente un employé, contenant son numéro d'employé et sa feuille de temps
-RegleEmployeValidator : permet de valider une feuille de temps pour un employé en utilisant les règles spécifiées dans le mapeur.json
-EmployeCreateur : permet de créer un nouvel employé en entrant les informations dans la console
-EmployeAdministration : 
-employeNormal :
-Pour utiliser l'application, il suffit de lancer le programme et de suivre les instructions affichées dans la console. Vous pouvez entrer un fichier JSON contenant une feuille de temps pour un employé, et l'application va valider la feuille de temps en utilisant les règles spécifiées dans le mapeur.json. Les erreurs de validation seront affichées dans la console et dans un fichier JSON de sortie.
+Installation:
+Clonez ce dépôt ou téléchargez les fichiers de l'application. 
+Ouvrez le projet dans Visual Studio. Compilez l'application.
+Exécutez l'application en cliquant sur le bouton "Démarrer" dans Visual Studio ou en ouvrant le fichier exécutable dans le dossier de sortie.
+Utilisation:
+Lorsque vous ouvrez l'application, vous verrez une fenêtre de connexion. Les employés peuvent accéder à leur feuille de temps en cliquant sur le bouton "Employé". Les patrons peuvent accéder à une interface spéciale en saisissant le mot de passe "admin" et en cliquant sur le bouton "Valider".
 
-pour utiliser l'application :
-Vous devez allez dans le dossier \PlanificationEmployer\Application\PlanificationEmployee\ConsoleApp\bin\Debug\net5.0 et executer planification Employee.exe
+Dans l'interface de l'employé, vous pouvez saisir les heures travaillées pour différents projets.
+
+Dans l'interface du patron, vous pouvez afficher des informations de gestion et valider les heures travaillées des employés.
+
+Dépendances:
+Cette application utilise les technologies suivantes :
+
+C# (langage de programmation)
+WPF (Windows Presentation Foundation)
+
 Merci d'avoir utilisé cette application !

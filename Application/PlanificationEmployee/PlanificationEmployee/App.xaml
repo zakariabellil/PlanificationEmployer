@@ -2,7 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:PlanificationEmployee"
+<<<<<<< HEAD
              StartupUri="InterfacePatron.xaml">
+=======
+             StartupUri="Menu.xaml">
+>>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
     <Application.Resources>
          
     </Application.Resources>
