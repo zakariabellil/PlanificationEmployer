@@ -62,8 +62,10 @@ namespace PlanificationEmployee
                     rangeFeuilleDeTempsUIS.Clear();
                     foreach (KeyValuePair<int, rangeFeuilleDeTempsUI> kvp in listeRangeeDictionary)                       
                         rangeFeuilleDeTempsUIS.Add(kvp.Value);
+                    
                     listView.ItemsSource = rangeFeuilleDeTempsUIS;
-                    }
+                    listView.Items.Refresh();
+                }
                 }
         }
     }

@@ -145,12 +145,12 @@ namespace PlanificationEmployee
             SemaineJourneeFeries[cal.GetWeekOfYear(DateTime.Parse("2023-10-02"), CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday)] = new List<int>() { 1 };
             SemaineJourneeFeries[cal.GetWeekOfYear(DateTime.Parse("2023-10-09"), CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday)] = new List<int>() { 1 };
             SemaineJourneeFeries[cal.GetWeekOfYear(DateTime.Parse("2023-11-13"), CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday)] = new List<int>() { 1 };
-<<<<<<< HEAD
+
             SemaineJourneeFeries[cal.GetWeekOfYear(DateTime.Parse("2023-12-25"), CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday)] = new List<int>() { 1 ,2 };            
-=======
+
             SemaineJourneeFeries[cal.GetWeekOfYear(DateTime.Parse("2023-12-25"), CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday)] = new List<int>() { 1 ,2 };
             
->>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
+
         }
         private bool isCodeCongeMaladie(Tuple<int, int> projet) {
             return (projet.Item1 == 999);         
@@ -193,23 +193,13 @@ namespace PlanificationEmployee
            
             if (SemaineJourneeFeries.TryGetValue(semaineFeuilleDeTemps, out joursDeSemainFeriesListe)) {
                 foreach (int joursDeSemainFeries in joursDeSemainFeriesListe)
-<<<<<<< HEAD
                     {
                     if (joursDeSemainFeries == compteurJours)
                         {
                         joursFeriesTrouvee = true;
                         break;
                         }
-                    }
-=======
-                {
-                    if (joursDeSemainFeries == compteurJours)
-                    {
-                        joursFeriesTrouvee = true;
-                        break;
-                    }
-                }
->>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
+                    }           
             }
           
 
@@ -257,14 +247,10 @@ namespace PlanificationEmployee
             return new Dictionary<string, int>() { { TELETRAVAIL, tempsTeletravailJournee },
                                                    { TRAVAILBUREAU, tempsTravailBureauJournee },
                                                    { CONGE_MALADIE, tempsCongeMaladie },
-<<<<<<< HEAD
+
                                                    { CONGE_FERIES, tempsCongeferies } };
             }
         }
     }
-=======
-                                                   { CONGE_FERIES, tempsCongeferies }, };
-            }
-        }
-    }
->>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
+                                               
+

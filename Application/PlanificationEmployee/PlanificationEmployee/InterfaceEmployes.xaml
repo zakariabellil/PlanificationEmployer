@@ -1,17 +1,13 @@
 ﻿<Window x:Class="PlanificationEmployee.InterfaceEmployes"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PlanificationEmployee"
         mc:Ignorable="d"
-<<<<<<< HEAD
-        Title="InterfaceEmployes" Height="500" Width="800">
-    <Grid Background="#FFB13EDE">
-=======
-        Title="InterfaceEmployes" Height="450" Width="800">
+        Title="InterfaceEmployes" Height="550" Width="550">
     <Grid RenderTransformOrigin="0.5,0.5">
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left"  Height="227" Margin="129,99,0,0" VerticalAlignment="Top" Width="528" Background="Green" SelectionUnit="CellOrRowHeader" AutoGenerateColumns="False">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left"  Height="208" Margin="49,146,0,0" VerticalAlignment="Top" Width="442" Background="Green" SelectionUnit="CellOrRowHeader" AutoGenerateColumns="False">
             <DataGrid.Resources>
                 <Style TargetType="{x:Type DataGridColumnHeader}" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
                     <Setter Property="Foreground" Value="Black" />
@@ -36,13 +32,14 @@
                 <DataGridTextColumn Header="Dimanche" Width="60" Binding="{Binding Dimanche }" IsReadOnly="False"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="Sauvgarder" Content="Sauvgarder" HorizontalAlignment="Left" Margin="140,352,0,0" VerticalAlignment="Top" Width="75" Click="Sauvgarder_Click"/>
->>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
-        <Label Content="Interface Epmloyés" HorizontalAlignment="Center" Height="60" Margin="0,-1,0,0" VerticalAlignment="Top" Width="800" Background="#FF5AB342" HorizontalContentAlignment="Center" FontSize="30" FontWeight="Bold" FontStyle="Italic" FontFamily="Times New Roman"/>
-        <Button Content="Retour" HorizontalAlignment="Left" Margin="705,423,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        
-
+        <Button x:Name="Sauvgarder" Content="Sauvgarder" HorizontalAlignment="Left" Margin="49,479,0,0" VerticalAlignment="Top" Width="75" Click="Sauvgarder_Click"/>
+        <TextBox x:Name="DateTxt" HorizontalAlignment="Left" Height="23" Margin="51,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="EntrerDateLbl" Content="Entrer la date de la feuille de temps&#xD;&#xA;dans le format suivant AAAA-MM-JJ" HorizontalAlignment="Left" Margin="49,10,0,0" VerticalAlignment="Top" Height="39" Width="203"/>
+        <TextBox x:Name="IDEmpTxt" HorizontalAlignment="Left" Height="23" Margin="51,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="EntrerIDEmpLbl" Content="Entrer le IDEmployer" HorizontalAlignment="Left" Margin="49,85,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="PathLbl" Content="Entrer le chemin dans le quelle vous voulez sauvgarder le fichier " HorizontalAlignment="Left" Margin="49,359,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.077,0.65"/>
+        <TextBox x:Name="PathTxt" HorizontalAlignment="Left" Height="23" Margin="51,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="textBox1_TextChanged"/>
+        <TextBox x:Name="NomFichierTxt" HorizontalAlignment="Left" Height="23" Margin="48,450,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="NomFichierLbl" Content="Entrer le nom du fichier à sauvgarder" HorizontalAlignment="Left" Margin="48,419,0,0" VerticalAlignment="Top"/>
     </Grid>
-
-
 </Window>

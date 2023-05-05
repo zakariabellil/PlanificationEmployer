@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,17 +15,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace PlanificationEmployee
-    {
+{
     /// <summary>
     /// Logique d'interaction pour InterfaceEmployes.xaml
     /// </summary>
     public partial class InterfaceEmployes : Window
-<<<<<<< HEAD
-        {
-=======
+
     {
         List<rangeFeuilleDeTempsUI> rangeFeuilleDeTempsUIS = new List<rangeFeuilleDeTempsUI>();
->>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
         public InterfaceEmployes()
         {
             InitializeComponent();
@@ -32,18 +30,70 @@ namespace PlanificationEmployee
             dataGrid.ItemsSource = rangeFeuilleDeTempsUIS;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Menu menu = new Menu();
-            this.Close();
-            menu.Show();
-        }
 
-<<<<<<< HEAD
-=======
+
         private void Sauvgarder_Click(object sender, RoutedEventArgs e)
         {
-            List<rangeFeuilleDeTempsUI> test = dataGrid.ItemsSource as List<rangeFeuilleDeTempsUI>;
->>>>>>> 3cb56cecd29a00c5c0a5c77b80e2d1575db5e001
+
+
+            if (string.IsNullOrEmpty(this.DateTxt.Text))
+            {
+                this.DateTxt.Focus();
+                MessageBox.Show("Svp ajouter la date");
+
+            }
+            else if (string.IsNullOrEmpty(this.IDEmpTxt.Text))
+            {
+                this.DateTxt.Focus();
+                MessageBox.Show("Svp ajouter le IDEmp");
+            }
+            else if (string.IsNullOrEmpty(this.PathTxt.Text))
+            {
+                this.PathTxt.Focus();
+                MessageBox.Show("Svp ajouter le chemin du dossier ou vous voulez sauvgarder");
+            }
+            else if (string.IsNullOrEmpty(this.NomFichierTxt.Text))
+            {
+                this.NomFichierTxt.Focus();
+                MessageBox.Show("Svp ajouter le nom du ficher a sauvgarder");
+            }
+            else
+            {
+                bool isErreursFeuilleDeTemps = false;
+                System.Globalization.Calendar cal = CultureInfo.CurrentCulture.Calendar;
+                int NumSemainFeuilleDeTemps = cal.GetWeekOfYear(DateTime.Parse(this.DateTxt.Text), CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
+                int IDEmp = int.Parse(this.IDEmpTxt.Text);
+                List<rangeFeuilleDeTempsUI> rangeFeuille = dataGrid.ItemsSource as List<rangeFeuilleDeTempsUI>;
+                feuilleDeTemps feuilleDeTemps = new feuilleDeTemps(rangeFeuille, IDEmp, NumSemainFeuilleDeTemps);
+                validateurFeuilleDeTemps validateurFeuilleDeTemps = new validateurFeuilleDeTemps();
+                Dictionary<string, string> erreursFeuilleDeTemps = validateurFeuilleDeTemps.validerFeuilleDeTemps(feuilleDeTemps);
+                foreach (KeyValuePair<string, string> kvp in erreursFeuilleDeTemps)
+                {
+                    if (kvp.Value != "Aucun probleme")
+                    {
+                        MessageBox.Show(kvp.Key + " " + " " + kvp.Value);
+                        isErreursFeuilleDeTemps = true;
+                        break;
+                    }
+                }
+                if (!isErreursFeuilleDeTemps)
+                {
+                    feuilleDeTemps.enregistrerMaFeuilleDeTempeEnFormatJson(this.PathTxt.Text,
+                                                                           this.NomFichierTxt.Text);
+                    MessageBox.Show("Feuille de temps sauvgardée!");
+                }
+            }
+
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
+}
