@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +14,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace PlanificationEmployee
-{
+    {
     /// <summary>
     /// Logique d'interaction pour InterfaceEmployes.xaml
     /// </summary>
     public partial class InterfaceEmployes : Window
-    {
+        {
         public InterfaceEmployes()
         {
             InitializeComponent();
@@ -30,5 +31,6 @@ namespace PlanificationEmployee
             this.Close();
             menu.Show();
         }
+
+        }
     }
-}

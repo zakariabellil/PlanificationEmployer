@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlanificationEmployee
 {
-    class rangeFeuilleDeTempsUI
+   public class rangeFeuilleDeTempsUI
     {
         public string CodeProjet { get; set; }
         public string Lundi { get; set; }
