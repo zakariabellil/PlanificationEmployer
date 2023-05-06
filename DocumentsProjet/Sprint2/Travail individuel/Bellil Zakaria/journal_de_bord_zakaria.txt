@@ -1,0 +1,41 @@
+18-04-2023: 1h
+
+Première rencontre de l’équipe : explication de projet et répartition des taches pour chaque membre de l’équipe.
+
+19-04-2023: 1h30
+
+Établissement des Exigences Fonctionnelles et non fonctionnelles,
+
+Modification de diagramme de classe.
+
+21-04-2023: 15 mn
+
+Vérification d’état d’avancement des taches reparti précédemment.
+
+24-04-2023: 1h
+
+Vérification d’état d’avancement des taches reparti précédemment. Et répartition des nouvelles taches.
+
+25-04-2023: 5h
+
+Travailler sur l'ajourt decode dans la classe feuilleDeTemps.cs + le mappeur
+
+28-04-2023: 1h
+
+Vérification d’état d’avancement des taches reparti précédemment. Plus un travail de groupe sur le code.
+
+29-04-2023: 4h
+
+Travailler sur l'affichage des informations du dans l'interface employer. 
+
+01-05-2023: 2h
+
+Rencontre pour vérification
+
+03-05-2023: 4h
+
+Travailler sur l'affichage des informations du dans l'interface patron.
+
+04-05-2023: 2h
+
+Rencontre pour vérification 
