@@ -1,0 +1,45 @@
+Le 18-04-2023(durée de la rencontre 1h)
+
+Première rencontre de l’équipe : explication de projet et répartition des taches pour chaque membre de l’équipe.
+
+Le 19-04-2023(durée de la rencontre 1h :30mn)
+
+Établissement des Exigences Fonctionnelles et non fonctionnelles,
+
+Modification de diagramme de classe.
+
+Le 21-04-2023(durée de la rencontre 20mn)
+
+Vérification d’état d’avancement des taches reparti précédemment.
+
+22-04-2023 : 2 h
+
+discuter avec zakaria sur comment implementer les nouvelles fonctionalité du validateur 
+
+Le 24-04-2023(durée de la rencontre 1h)
+
+Vérification d’état d’avancement des taches reparti précédemment. Et répartition des nouvelles taches.
+
+26-04-2023 : 4h
+
+travailler sur l'implementation du validateur
+
+Le 28-04-2023(durée de la rencontre 1h)
+
+Vérification d’état d’avancement des taches reparti précédemment. Plus un travail de groupe sur le code.
+
+Le 01-05-2023(durée de la rencontre 2h)
+
+Rencontre pour vérification
+
+02-05-2023 : 3h
+
+travailler sur l'implementation du validateur
+
+03-05-2023 : 1h30
+
+tester les regle de validation avec zakaria
+
+Le 04-05-2023(durée de la rencontre 2h)
+
+Rencontre pour vérification 
